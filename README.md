@@ -11,7 +11,7 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - hadoop-namenode needs toaster to brown your bagel.
+- `toaster` - hadoop-namenode needs toaster to brown your bagel
 
 Attributes
 ----------
