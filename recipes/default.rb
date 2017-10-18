@@ -21,11 +21,10 @@ ruby_block  "set-env-java-home" do
   end
 end
 
-bash 'set-env-bashrc' do
+bash 'set-env-profile.d' do
   code <<-EOH
-    echo -e "export JAVA_HOME=$JAVA_HOME" >> ~/.bash_profile
-    echo -e "export PATH=$PATH" >> ~/.bash_profile
-    source ~/.bash_profile
+    echo -e "export JAVA_HOME=$JAVA_HOME" >> /etc/profile.d/jdk.sh
+    echo -e "export PATH=$PATH" >> /etc/profile.d/jdk.sh
   EOH
 end
 
